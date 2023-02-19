@@ -15,12 +15,9 @@ FillArrayRandomNumbers(numbers);
 PrintArray(numbers);
 int result = 0;
 
-for (int i = 0; i < numbers.Length; i++)
+for (int i = 1; i < numbers.Length; i+=2)
 {
-    if (i % 2 != 0)
-    {
         result += numbers[i];
-    }
 }
 Console.WriteLine($"Сумма элементов нечетных позиций = {result}");
 
